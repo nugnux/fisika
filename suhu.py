@@ -30,8 +30,37 @@ if (sX=='C'):
         y = x * 4/5
     elif(sY=='K'):
         y = x + 273
-st.write(f"{x} {sX} = {y} {sY}")
+elif (sX=='F'):
+    if(sY=='C'):
+        y = (x-32) * 5/9
+    elif(sY=='F'):
+        y = x 
+    elif(sY=='R'):
+        y = (x-32) * 4/9
+    elif(sY=='K'):
+        y = (x-32) * 5/9 + 273
+elif (sX=='R'):
+    if(sY=='C'):
+        y = x * 5/4 
+    elif(sY=='F'):
+        y = x * 9/4 +32
+    elif(sY=='R'):
+        y = x 
+    elif(sY=='K'):
+        y = x * 5/4 + 273
+elif (sX=='K'):
+    if(sY=='C'):
+        y = x - 273
+    elif(sY=='F'):
+        y = (x-273) * 9/5 +32
+    elif(sY=='R'):
+        y = (x-273) * 4/5
+    elif(sY=='K'):
+        y = x
 
+st.divider()
+st.write(f"{x} {sX} = {y} {sY}")
+st.divider()
 
 col1, col2 = st.columns(2)
 with col1:
