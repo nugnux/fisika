@@ -19,7 +19,7 @@ with c3:
 with c4:
     if (operator=='+'):
         z = x + y
-    elif (operator=='+'):
+    elif (operator=='-'):
         z = x - y
     elif (operator=='x'):
         z = x * y
