@@ -25,7 +25,7 @@ with c4:
         z = x * y
     elif (operator==':'):
         z = x / y
-        
+    st.write('z' )    
     st.write('= ',z )
 
 
