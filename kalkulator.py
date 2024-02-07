@@ -29,6 +29,6 @@ with c4:
     st.write('= ',z )
 
 
-st.write(x,' ',satuan,' = ',' ')
+
 
 st.caption('Copyright © Nugroho Adi Pramono 2023')
