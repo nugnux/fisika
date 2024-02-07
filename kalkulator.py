@@ -10,7 +10,7 @@ c1, c2 = st.columns(2)
 
 with c1:
     x = st.number_input('Suhu ',value=100)
-    st.write('Dikonversi ke: ')
+    st.write('=>: ')
 with c2:
     satuan = st.selectbox(
         'Satuan',
