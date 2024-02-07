@@ -4,16 +4,30 @@ import streamlit as st
 st.header('Nugroho :sparkles:')
 st.subheader('Plot')
 
-c1, c2 = st.columns(2)
+c1, c2, c3, c4 = st.columns(4)
 
 with c1:
-    x = st.number_input('Suhu ',value=100)
+    x = st.number_input('x ',value=7)
     st.write('=>: ')
 with c2:
-    satuan = st.selectbox(
-        'Satuan',
+    operator = st.selectbox(
+        'operator',
         ('+', '-', 'x',':'),key='k1')
     st.write(':sparkles: ')
+with c3:
+    y = st.number_input('y ',value=11)
+with c4:
+    if (operator=='+'):
+        z = x + y
+    elif (operator=='+'):
+        z = x - y
+    elif (operator=='x'):
+        z = x * y
+    elif (operator==':'):
+        z = x / y
+        
+    st.write('= ',z )
+
 
 st.write(x,' ',satuan,' = ',' ')
 
