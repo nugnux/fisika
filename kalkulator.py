@@ -14,6 +14,6 @@ with c2:
         'Satuan',
         ('C', 'F', 'R','K'),key='k1')
 
-st.write(x,' ',satuan,' = ',' ',konversi)
+st.write(x,' ',satuan,' = ',' ')
 
 st.caption('Copyright © Nugroho Adi Pramono 2023')
