@@ -12,7 +12,7 @@ with c1:
 with c2:
     satuan = st.selectbox(
         'Satuan',
-        ('C', 'F', 'R','K'),key='k1')
+        ('+', '-', 'x',':'),key='k1')
     st.write(':sparkles: ')
 
 st.write(x,' ',satuan,' = ',' ')
