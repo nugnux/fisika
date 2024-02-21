@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 x = st.slider('Pilih rentang', 0.0, 2.0, (.2, .5))
 st.write('nilai x:', x)
@@ -9,3 +9,13 @@ st.write('nilai y:', y)
 
 t = np.linspace(x[0],x[1],100)
 u = np.sin(t)
+
+fig, ax = plt.subplots(figsize=(16, 8))
+ax.plot(t, u, label='sin(t)', color='b')  # Plotting sin(t) curve
+ax.set_ylabel("")
+ax.set_xlabel("t")
+ax.tick_params(axis='u', labelsize=20)
+ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha='right')
+ax.tick_params(axis='t', labelsize=15)
+
+st.pyplot(fig)
