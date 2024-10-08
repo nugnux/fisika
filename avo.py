@@ -28,7 +28,7 @@ k = st.slider('k : ',100., 57103., 1., .1)
 st.write('k:', k, 'N/m')
 m = st.slider('m ',1.0, 573.,1., .1)
 st.write('m:', m, ' g')
-tp = np.sqrt((k+np.random.random()-.5)/m*1000)
+tp = np.sqrt((m/1000)/(k+np.random.random()-.5))
 st.write('Periode Ayunan Pegas=', tp,' s')
 
 
