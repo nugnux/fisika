@@ -4,11 +4,10 @@ import numpy as np
 
 st.title("Alat Ukur Tak Presisi")
 st.divider()
-st.divider()
-
 
 #AVO
 st.header("Amperemeter", divider=True)
+st.divider()
 
 r = st.slider('R : ',1., 4700., 1., .1)
 st.write('R:', r, 'Ohm')
