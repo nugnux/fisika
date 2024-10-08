@@ -24,7 +24,7 @@ st.write('Periode ayunan:', t, 's')
 
 #Pegas
 st.header("Ayunan Pegas", divider=True)
-k = st.slider('k : ',100., 57103., 1., .1)
+k = st.slider('k : ',100., 57103., 300., .1)
 st.write('k:', k, 'N/m')
 m = st.slider('m ',1.0, 573.,1., .1)
 st.write('m:', m, ' g')
