@@ -1,6 +1,9 @@
 import streamlit as st
 import random
 import numpy as np
+import time
+import pandas as pd
+
 
 st.title("Alat Ukur Tak Presisi")
 
@@ -38,7 +41,6 @@ with pegas:
   st.write('Periode Ayunan Pegas =', tp,' s = ',1000*tp,'ms')
 
 import time
-import numpy as np
 import pandas as pd
 
 _LOREM_IPSUM = """
