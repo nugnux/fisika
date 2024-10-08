@@ -36,8 +36,8 @@ with kpegas:
   st.write('k:', kp, 'N/m')
   f = st.slider('Gaya tarik : ',0., 5710., 0., .1)
   st.write('k:', f, 'N/m')
-  dx = (f+np.random.random()-0.5)/kp
-  st.write('$\delta x$ =', dx, 'm =',dx*100,'cm')
+  dx = f/(kp+np.random.random()-0.5)
+  st.write('$\Delta x$ =', dx, 'm =',dx*100,'cm')
 
 
 #Pegas
