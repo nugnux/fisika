@@ -29,7 +29,7 @@ st.write('k:', k, 'N/m')
 m = st.slider('m ',0.0, 573., 0.)
 st.write('m:', m, ' g')
 tp = np.sqrt((k+np.random.random()-.5)/m)
-st.write('Periode Ayunan Pegas=', tp,'s')
+st.write('Periode Ayunan Pegas=', tp,' s')
 
 
 
