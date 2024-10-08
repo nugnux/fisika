@@ -19,11 +19,12 @@ with avo:
 
 #Ayunan
 st.header("Ayunan Bandul", divider=True)
-
-l = st.slider('Panjang tali : ',1., 57., 1., .1)
-st.write('l:', l, 'cm')
-t = 2*np.pi*np.sqrt(((l+np.random.random()-0.5)/100) /9.8)
-st.write('Periode ayunan:', t, 's')
+ayunan = st.container(border=True)
+with ayunan:
+  l = st.slider('Panjang tali : ',1., 57., 1., .1)
+  st.write('l:', l, 'cm')
+  t = 2*np.pi*np.sqrt(((l+np.random.random()-0.5)/100) /9.8)
+  st.write('Periode ayunan:', t, 's')
 
 #Pegas
 st.header("Ayunan Pegas", divider=True)
