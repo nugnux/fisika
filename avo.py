@@ -22,7 +22,7 @@ with avo:
 #Ayunan
 st.header("Ayunan Bandul", divider=True)
 ayunan = st.container(border=True)
-with ayunan:
+with kpegas:
   l = st.slider('Panjang tali : ',1., 57., 1., .1)
   st.write('l:', l, 'cm')
   t = 2*np.pi*np.sqrt(((l+np.random.random()-0.5)/100) /9.8)
