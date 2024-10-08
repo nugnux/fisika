@@ -19,7 +19,7 @@ st.header("Ayunan", divider=True)
 
 l = st.slider('Panjang tali : ',1., 57., 1., .1)
 st.write('l:', l, 'cm')
-t = 2*np.pi*np.sqrt((l/100) /9.8)
+t = 2*np.pi*np.sqrt(((l+np.random.random()-0.5)/100) /9.8)
 st.write('Periode ayunan:', t, 's')
 
 
