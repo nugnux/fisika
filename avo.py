@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import numpy as np
 
 st.title("Alat Ukur Tak Presisi")
 
@@ -18,5 +19,8 @@ st.header("Ayunan", divider=True)
 
 l = st.slider('Panjang tali : ',1., 57., 1., .1)
 st.write('l:', r, 'cm')
+t = np.sqrt(4 * np.pi**2 * ((l+np.random.random()-.5)/1000) /9.8)
+st.write('Periode ayunan:', t, 's')
+
 
 
