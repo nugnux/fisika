@@ -24,11 +24,11 @@ st.write('Periode ayunan:', t, 's')
 
 #Pegas
 st.header("Ayunan Pegas", divider=True)
-k = st.slider('k : ',100., 4700., 1., .1)
+k = st.slider('k : ',100., 57103., 1., .1)
 st.write('k:', k, 'N/m')
-m = st.slider('m ',0.0, 573., 0.)
+m = st.slider('m ',1.0, 573., 0.)
 st.write('m:', m, ' g')
-tp = np.sqrt((k+np.random.random()-.5)/m)
+tp = np.sqrt((k+np.random.random()-.5)/m*1000)
 st.write('Periode Ayunan Pegas=', tp,' s')
 
 
