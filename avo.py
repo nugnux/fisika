@@ -15,12 +15,22 @@ i = v/(r + random.random() - .5)
 st.write('I=', i,'A =',i*1000,'mA')
 
 #Ayunan
-st.header("Ayunan", divider=True)
+st.header("Ayunan Bandul", divider=True)
 
 l = st.slider('Panjang tali : ',1., 57., 1., .1)
 st.write('l:', l, 'cm')
 t = 2*np.pi*np.sqrt(((l+np.random.random()-0.5)/100) /9.8)
 st.write('Periode ayunan:', t, 's')
+
+#Pegas
+st.header("Ayunan Pegas", divider=True)
+k = st.slider('k : ',100., 4700., 1., .1)
+st.write('k:', k, 'N/m')
+m = st.slider('m ',0.0, 573., 0.)
+st.write('m:', m, ' g')
+tp = np.sqrt((k+np.random.random()-.5)/m)
+st.write('Periode Ayunan Pegas=', tp,'s')
+
 
 
 
