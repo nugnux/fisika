@@ -1,8 +1,9 @@
 import streamlit as st
+import random
 
 r = st.slider('R = ',1., 4700., 1., .1)
 #st.write('R:', r)
 v = st.slider('V ',0.0, 12., 0.)
 #st.write('V:', v)
-i = v/r
+i = v/r + random.random()
 st.write('I:', i)
