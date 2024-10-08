@@ -28,12 +28,14 @@ with ayunan:
 
 #Pegas
 st.header("Ayunan Pegas", divider=True)
-k = st.slider('k : ',10., 5710., 70., .1)
-st.write('k:', k, 'N/m')
-m = st.slider('m ',1.0, 573.,1., .1)
-st.write('m:', m, ' g')
-tp = 2*np.pi*np.sqrt((m/1000)/(k+np.random.random()-.5))
-st.write('Periode Ayunan Pegas=', tp,' s = ',1000*tp,'ms')
+pegas = st.container(border=True)
+with pegas:
+  k = st.slider('k : ',10., 5710., 70., .1)
+  st.write('k:', k, 'N/m')
+  m = st.slider('m ',1.0, 573.,1., .1)
+  st.write('m:', m, ' g')
+  tp = 2*np.pi*np.sqrt((m/1000)/(k+np.random.random()-.5))
+  st.write('Periode Ayunan Pegas=', tp,' s = ',1000*tp,'ms')
 
 
 
