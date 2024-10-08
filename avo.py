@@ -22,7 +22,7 @@ with avo:
 #Ayunan
 st.header("Ayunan Bandul", divider=True)
 ayunan = st.container(border=True)
-with kpegas:
+with ayunan:
   l = st.slider('Panjang tali : ',1., 57., 1., .1)
   st.write('l:', l, 'cm')
   t = 2*np.pi*np.sqrt(((l+np.random.random()-0.5)/100) /9.8)
@@ -31,7 +31,7 @@ with kpegas:
 #KPegas
 st.header("Pegas", divider=True)
 kpegas = st.container(border=True)
-with ayunan:
+with kpegas:
   kp = st.slider('Konstanta Pegas : ',10., 5710., 7., .1)
   st.write('k:', kp, 'N/m')
   f = st.slider('Gaya tarik : ',0., 5710., 0., .1)
