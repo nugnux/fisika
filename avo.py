@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 st.title("Alat Ukur Tak Presisi")
-st.title("_Streamlit_ is :blue[cool] :sunglasses: ")
+st.title("Amperemeter")
 
 r = st.slider('R = ',1., 4700., 1., .1)
 #st.write('R:', r)
