@@ -1,8 +1,7 @@
 import streamlit as st
 import random
 import numpy as np
-import time
-import pandas as pd
+
 
 
 st.title("Alat Ukur Tak Presisi")
@@ -39,34 +38,6 @@ with pegas:
   st.write('m:', m, ' g')
   tp = 2*np.pi*np.sqrt((m/1000)/(k+np.random.random()-.5))
   st.write('Periode Ayunan Pegas =', tp,' s = ',1000*tp,'ms')
-
-import time
-import pandas as pd
-
-_LOREM_IPSUM = """
-Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-"""
-
-
-def stream_data():
-    for word in _LOREM_IPSUM.split(" "):
-        yield word + " "
-        time.sleep(0.02)
-
-    yield pd.DataFrame(
-        np.random.randn(5, 10),
-        columns=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"],
-    )
-
-    for word in _LOREM_IPSUM.split(" "):
-        yield word + " "
-        time.sleep(0.02)
-
-
-if st.button("Stream data"):
-    st.write_stream(stream_data)
 
 
 
