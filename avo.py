@@ -8,13 +8,13 @@ st.title("Alat Ukur Tak Presisi")
 #AVO
 st.header("Amperemeter", divider=True)
 avo =  st.container(border=True)
-
-r = avo.slider('R : ',1., 4700., 1., .1)
-avo.write('R:', r, 'Ohm')
-v = avo.slider('V ',0.0, 12., 0.)
-avo.write('V:', v, ' Volt')
-i = v/(r + random.random() - .5)
-avo.write('I=', i,'A =',i*1000,'mA')
+with avo:
+  r = st.slider('R : ',1., 4700., 1., .1)
+  st.write('R:', r, 'Ohm')
+  v = st.slider('V ',0.0, 12., 0.)
+  avo.write('V:', v, ' Volt')
+  i = v/(r + random.random() - .5)
+  st.write('I=', i,'A =',i*1000,'mA')
 
 
 #Ayunan
