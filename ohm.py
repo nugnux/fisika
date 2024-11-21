@@ -1,11 +1,8 @@
-
-st.title("Alat Ukur Tak Presisi")
 import streamlit as st
 import random
 import numpy as np
 
-
-st.title("Alat Ukur Tak Presisi")
+st.title("Alat Ukur Tak Presisi - Hukum Ohm")
 
 #AVO
 st.header("Amperemeter", divider=True)
