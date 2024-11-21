@@ -13,5 +13,4 @@ with avo:
   i = (v + random.random() - .5)/(371)
   st.write('I =', i,'A =',i*1000,'mA')
 
-
 st.header("", divider=True)
