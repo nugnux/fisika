@@ -14,4 +14,4 @@ with avo:
   st.write('I =', i,'A =',i*1000,'mA')
 
 
-st.header("Ayunan Bandul", divider=True)
+st.header("", divider=True)
