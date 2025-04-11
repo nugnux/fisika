@@ -8,5 +8,6 @@ st.subheader('Nugroho')
 
 x = stb.single_choice("Gerak jatuh bebas merupakan salah satu contoh aksi-reaksi",
                   ["Benar", "Salah"], 1)
-st.write(x)
 print(x)
+if (x[1]):
+  st.write("Jawaban Benar")
