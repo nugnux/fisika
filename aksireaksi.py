@@ -5,13 +5,12 @@ import streamlit_book as stb
 st.header('Aksi Reaksi :sparkles:')
 st.subheader('Nugroho')
 
-x = stb.single_choice("Gerak jatuh bebas merupakan salah satu contoh aksi-reaksi",
-                  ["Benar", "Salah"], 1)
+x = stb.single_choice("Gerak jatuh bebas merupakan salah satu contoh aksi-reaksi", ["Benar", "Salah"], 1)
 st.write(x)
 
-#if (x[1]):
-#  st.write("Jawaban Benar")
-#else:
-#  y = stb.single_choice("Aksi reaksi bekerja pada satu benda",
-#                  ["Benar", "Salah"], 1)
+if (x[0]):
+  if (x[1]):
+    st.write("Jawaban Benar")
+  else:
+    y = stb.single_choice("Aksi reaksi bekerja pada satu benda", ["Benar", "Salah"], 1)
 
