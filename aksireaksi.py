@@ -11,8 +11,8 @@ x = stb.single_choice("Gerak jatuh bebas merupakan salah satu contoh aksi-reaksi
 
 print(x)  
 
-if (x[1]):
-  st.write("Jawaban Benar")
+#if (x[1]):
+#  st.write("Jawaban Benar")
 #else:
 #  y = stb.single_choice("Aksi reaksi bekerja pada satu benda",
 #                  ["Benar", "Salah"], 1)
