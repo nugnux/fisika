@@ -12,7 +12,7 @@ if (x[0]):
   if (x[1]):
     st.write("Jawaban Benar")
     nilai += 1
-    st.experimental_set_query_params(s_nilai = nilai)
+    st.query_params(s_nilai = nilai)
   else:
     y = stb.single_choice("Aksi reaksi bekerja pada satu benda", ["Benar", "Salah"], 1)
 app_state = st.query_params()  
