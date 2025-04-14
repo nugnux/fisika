@@ -18,9 +18,9 @@ x1 = stb.single_choice("Gerak jatuh bebas merupakan salah satu contoh aksi-reaks
                       ["Benar", "Salah"], 1)
 st.write(x1)
 
-if (x[0]):
+if (x1[0]):
   st.session_state.c1 = 1
-  if (x[1]):
+  if (x1[1]):
     st.write("Jawaban Benar")
     st.session_state['nilai'] += 1
     st.session_state.s1 = 1
