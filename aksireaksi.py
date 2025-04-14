@@ -21,7 +21,7 @@ if (x[0]):
     st.session_state['nilai'] += 1
     st.session_state.s1 = 1
     
-if (! st.session_state.s1):
+if (st.session_state.s1 == 0):
     y = stb.single_choice("Aksi reaksi bekerja pada satu benda", ["Benar", "Salah"], 1)
 
 st.write('Nilai = ', st.session_state.nilai)
