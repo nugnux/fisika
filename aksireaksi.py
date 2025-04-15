@@ -19,7 +19,7 @@ x1 = stb.single_choice("Sebuah benda bermassa 0,8 kg digantung pada pegas vertik
                        success='Benar, $T=2\pi\sqrt{\frac{0.8}{160}\approx 0.56\, s}$', 
                        error='Pastikan rumus yang anda gunakan benar, jangna lupa tanda akar.')
 st.write(x1)
-st.latex(" T = 2 \pi \sqrt{\frac{0.8}{160}} ")
+st.latex(" T = 2 \pi \sqrt{2} ")
 
 if (x1[0]):
   st.session_state.c1 = 1
