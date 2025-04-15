@@ -17,7 +17,7 @@ for i in range (3):
 x1 = stb.single_choice("Sebuah benda bermassa 0,8 kg digantung pada pegas vertikal dengan konstanta k = 160 N/m. Benda digetarkan dari posisi setimbang.", 
         ["0,32 s", "0,44 s", "0,56 s", "0,62 s"], 2,
                        success='Benar, $T=2\pi\sqrt{\frac{0.8}{160}\approx 0.56\, s}$', 
-                       error='Wrong answer')
+                       error='Pastikan rumus yang anda gunakan benar, jangna lupa tanda akar.')
 st.write(x1)
 
 if (x1[0]):
