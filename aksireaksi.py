@@ -20,7 +20,7 @@ x1 = stb.single_choice("Sebuah benda bermassa 0,8 kg digantung pada pegas vertik
                        error='Pastikan rumus yang anda gunakan benar, jangna lupa tanda akar.')
 st.write(x1)
 rumus ="T=2\pi\sqrt{\frac{0.8}{160}\approx 0.56\, s}"
-st.write(f"Benar, ${rumus}$")
+st.write(f"Benar, \${rumus}\$")
 
 if (x1[0]):
   st.session_state.c1 = 1
