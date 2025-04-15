@@ -14,8 +14,9 @@ for i in range (3):
     if 'c'+str(i)  not in st.session_state:
         st.session_state['c'+str(i)] = 0
 
-x1 = stb.single_choice("Gerak jatuh bebas merupakan salah satu contoh aksi-reaksi", 
-                      ["Benar", "Salah"], 1)
+x1 = stb.single_choice("Sebuah benda bermassa 0,8 kg digantung pada pegas vertikal dengan konstanta 
+        k = 160 N/m. Benda digetarkan dari posisi setimbang.", 
+        ["0,32 s", "0,44 s", "0,56 s", "0,62 s"], 2)
 st.write(x1)
 
 if (x1[0]):
@@ -42,5 +43,5 @@ if (st.session_state.s1 == 0 and st.session_state.c1 == 1 ):
 nil = 0
 for i in range(3):
     nil += st.session_state['s'+str(i)]
-st.write('Nilai Total= ', nil)
-st.write('Nilai Total= ', st.session_state.nilai)
+st.write('Nilai Sesi= ', nil)
+st.write('Nilai Kumulatif= ', st.session_state.nilai)
