@@ -31,7 +31,7 @@ x3 = stb.single_choice("Pernyataan manakah yang benar mengenai energi dalam gera
          "Energi potensial pegas tidak bergantung pada posisi benda"], 
                        2,
                        success='Benar! Energi terus-menerus berubah bentuk, tapi jumlah totalnya tetap.', 
-                       error='Ingat rumus kekealan energi')
+                       error='Salah. Ingat rumus kekekalan energi')
 
 
 if (x1[0]):
