@@ -35,15 +35,19 @@ if (x1[0]):
 
     
 if (st.session_state.s1 == 0 and st.session_state.c1 == 1 ):
-    y1 = stb.single_choice("Aksi reaksi bekerja pada satu benda", ["Benar", "Salah"], 1)
+    pass
+    #y1 = stb.single_choice("Aksi reaksi bekerja pada satu benda", ["Benar", "Salah"], 1)
     if (y1[0]):
-      st.session_state.c1 = 1
+        pass
+        #st.session_state.c1 = 1
       if (y1[1]):
-        st.write("Jawaban Benar")
-        st.session_state['nilai'] += 1
-        st.session_state.s1 = .5
+          pass
+            #st.write("Jawaban Benar")
+            #st.session_state['nilai'] += 1
+            #st.session_state.s1 = .5
       else:
-        st.session_state.s1 = 0
+          pass
+            #st.session_state.s1 = 0
 
 nil = 0
 for i in range(3):
