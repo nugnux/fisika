@@ -73,7 +73,7 @@ if (st.session_state.s1 == 0 and st.session_state.c1 == 1 ):
             #st.session_state.s1 = 0
 
 nil = 0
-for i in range(3):
+for i in range(4):
     nil += st.session_state['s'+str(i)]
 st.write('Nilai Sesi = ', nil)
 st.write('Nilai Kumulatif = ', st.session_state.nilai)
