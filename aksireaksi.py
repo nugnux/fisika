@@ -40,12 +40,12 @@ if (st.session_state.s1 == 0 and st.session_state.c1 == 1 ):
     if (y1[0]):
         pass
         #st.session_state.c1 = 1
-      if (y1[1]):
+        if (y1[1]):
           pass
             #st.write("Jawaban Benar")
             #st.session_state['nilai'] += 1
             #st.session_state.s1 = .5
-      else:
+        else:
           pass
             #st.session_state.s1 = 0
 
