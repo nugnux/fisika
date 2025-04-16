@@ -7,7 +7,7 @@ st.subheader('Nugroho')
 #nilai
 if 'nilai' not in st.session_state:
     st.session_state['nilai'] = 0
-for i in range (3):
+for i in range (4):
     if 's'+str(i)  not in st.session_state:
         st.session_state['s'+str(i)] = 0
 for i in range (3):
@@ -23,6 +23,16 @@ x2 = stb.single_choice("Apa yang terjadi terhadap frekuensi osilasi jika massa b
         ["Frekuensi Bertambah", "Frekuensi berkurang", "Frekuensi tetap", "Frekuensi nol"], 1,
                        success='Benar, $ f = \\frac{1}{2 \pi} \sqrt{\\frac{k}{m}} $, jika $m$ naik maka $f$ turun', 
                        error='Ingat rumus frekuensi pada pegas')
+
+x3 = stb.single_choice("Pernyataan manakah yang benar mengenai energi dalam gerak harmonis sederhana pada sistem pegas?", 
+        ["Energi kinetik selalu lebih besar dari energi potensial", 
+         "Energi mekanik total berubah-ubah selama osilasi", 
+         "Energi mekanik total tetap, tetapi bentuknya berubah antara kinetik dan potensial", 
+         "Energi potensial pegas tidak bergantung pada posisi benda"], 
+                       2,
+                       success='Benar! Energi terus-menerus berubah bentuk, tapi jumlah totalnya tetap.', 
+                       error='Ingat rumus kekealan energi')
+
 
 if (x1[0]):
   st.session_state.c1 = 1
