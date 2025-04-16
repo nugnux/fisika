@@ -19,6 +19,10 @@ x1 = stb.single_choice("Sebuah benda bermassa 0,8 kg digantung pada pegas vertik
                        success='Benar, $ T = 2 \pi \sqrt{\\frac{0.8}{160}} \\approx 0.56 \,s$', 
                        error='Pastikan rumus yang anda gunakan benar, jangan lupa tanda akar.')
 st.write(x1)
+x2 = stb.single_choice("Apa yang terjadi terhadap frekuensi osilasi jika massa benda yang digantung pada pegas ditambah?", 
+        ["Frekuensi Bertambah", "Frekuensi berkurang", "Frekuensi tetap", "Frekuensi nol"], 1,
+                       success='Benar, $ f = \\frac{2 \pi} \sqrt{\\frac{k}{m}} $, jika $m$ naik maka $f$ turun', 
+                       error='Ingat rumus frekuensi pada pegas')
 
 if (x1[0]):
   st.session_state.c1 = 1
