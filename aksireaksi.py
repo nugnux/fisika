@@ -37,11 +37,24 @@ x3 = stb.single_choice("Pernyataan manakah yang benar mengenai energi dalam gera
 if (x1[0]):
   st.session_state.c1 = 1
   if (x1[1]):
-    st.write("Jawaban Benar")
     st.session_state['nilai'] += 1
     st.session_state.s1 = 1
   else:
     st.session_state.s1 = 0
+if (x2[0]):
+  st.session_state.c2 = 1
+  if (x2[1]):
+    st.session_state['nilai'] += 1
+    st.session_state.s2 = 1
+  else:
+    st.session_state.s2 = 0
+if (x3[0]):
+  st.session_state.c3 = 1
+  if (x3[1]):
+    st.session_state['nilai'] += 1
+    st.session_state.s3 = 1
+  else:
+    st.session_state.s3 = 0
 
     
 if (st.session_state.s1 == 0 and st.session_state.c1 == 1 ):
